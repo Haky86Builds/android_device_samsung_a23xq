@@ -16,3 +16,10 @@ cc_library_static {
         "libbase",
     ],
 }
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    soc_specific: true,
+    vendor: true,
+}
