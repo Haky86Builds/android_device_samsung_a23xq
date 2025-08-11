@@ -45,6 +45,10 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# HotwordEnrollement
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
