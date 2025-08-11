@@ -56,6 +56,9 @@ BOARD_USES_QCNE := true
 # Dexpreopt
 BOARD_USES_SYSTEM_OTHER_ODEX := true
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 
