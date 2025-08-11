@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint \
     vendor_firmware-modem_mountpoint
 
+# Power
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
