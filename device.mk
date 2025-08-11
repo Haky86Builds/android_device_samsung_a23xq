@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
+# Keymaster
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a23xq:libskeymaster4device)
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
