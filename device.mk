@@ -19,6 +19,9 @@ BOARD_SHIPPING_API_LEVEL := 31
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Dataservices
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
+
 # Display
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
