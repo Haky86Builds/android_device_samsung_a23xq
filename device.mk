@@ -32,6 +32,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Fastboot
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
 
+# File System
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
