@@ -45,6 +45,9 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a23xq)
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
