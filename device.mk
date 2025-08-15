@@ -13,6 +13,10 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong
+
 # API
 BOARD_SHIPPING_API_LEVEL := 31
 
