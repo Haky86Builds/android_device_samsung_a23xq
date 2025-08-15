@@ -413,6 +413,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     secril_config_svc \
+    sehradiomanager
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
 
 # Sensors
 PRODUCT_COPY_FILES += \
