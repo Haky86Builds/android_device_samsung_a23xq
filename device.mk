@@ -216,6 +216,9 @@ PRODUCT_ENABLE_UFFD_GC := false
 # Keymaster
 $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a23xq:libskeymaster4device)
 
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung
+
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a23xq)
 
