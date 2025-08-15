@@ -114,6 +114,10 @@ $(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Display
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
