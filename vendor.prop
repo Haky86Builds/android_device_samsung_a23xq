@@ -156,6 +156,11 @@ external_storage.sdcardfs.enabled=0
 # Fastbootd
 ro.fastbootd.available=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.supports_gestures=true
+ro.vendor.fingerprint.sensor_location=1080|820|350
+
 # FRP
 ro.frp.pst=/dev/block/persistent
 
