@@ -46,6 +46,8 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a23xq)
 
 # Partitions
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Ramdisk
