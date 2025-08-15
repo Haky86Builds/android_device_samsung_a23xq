@@ -48,6 +48,9 @@ $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a23xq)
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Ramdisk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
