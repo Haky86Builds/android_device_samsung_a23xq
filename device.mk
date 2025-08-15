@@ -270,6 +270,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
