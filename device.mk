@@ -87,5 +87,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 AB_OTA_UPDATER := false
 
+# WiFi
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/a23xq/a23xq-vendor.mk)
