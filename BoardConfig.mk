@@ -53,6 +53,9 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CnE
 BOARD_USES_QCNE := true
 
+# Dexpreopt
+BOARD_USES_SYSTEM_OTHER_ODEX := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 
