@@ -36,6 +36,9 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(DEVICE_PATH)/fastboot-info.txt
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
