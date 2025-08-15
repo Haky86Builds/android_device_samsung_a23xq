@@ -227,6 +227,18 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.samsung
 
 # Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor \
+    libcodec2_hidl@1.0 \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1 \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_vndk \
+    libcodec2_vndk.vendor \
+    libsfplugin_ccodec
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(DEVICE_PATH)/configs/media/dax3_media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax3_media_codecs_dolby_audio.xml \
