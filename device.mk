@@ -113,6 +113,8 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/qmi/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     $(DEVICE_PATH)/configs/qmi/TSP1_SPEC_15.txt:$(TARGET_COPY_OUT_VENDOR)/etc/TSP1_SPEC_15.txt \
     $(DEVICE_PATH)/configs/qmi/TSP1_SPEC_PRE.txt:$(TARGET_COPY_OUT_VENDOR)/etc/TSP1_SPEC_PRE.txt \
+    system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    system/core/libprocessgroup/profiles/task_profiles_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
 
 # Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
