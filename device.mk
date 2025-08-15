@@ -222,6 +222,10 @@ PRODUCT_PACKAGES += \
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_a23xq)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.samsung
+
 # Media
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
