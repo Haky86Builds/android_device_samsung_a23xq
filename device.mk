@@ -75,5 +75,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Telephony
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Updater
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/a23xq/a23xq-vendor.mk)
