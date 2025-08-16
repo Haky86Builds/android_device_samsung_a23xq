@@ -1452,7 +1452,6 @@ vendor/etc/sensors/config/strait_default_sensors.json
 vendor/etc/sensors/config/strait_dynamic_sensors.json
 vendor/etc/sensors/config/strait_power_0.json
 vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/libsensorslog.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libsns_fastRPC_util.so
@@ -1464,7 +1463,6 @@ vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so

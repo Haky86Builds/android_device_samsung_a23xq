@@ -54,8 +54,9 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('E1 03 15 AA 08 00 40 F9 E3 03 14 AA 08 09 40 F9', 'E1 03 15 AA 08 00 40 F9 03 00 80 D2 08 09 40 F9'),
     ('vendor/lib64/hw/gatekeeper.mdfpp.so', 'vendor/lib64/libkeymaster_helper.so', 'vendor/lib64/libskeymaster4device.so'): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
-    ('vendor/lib/libscaler_hw.unifunc.so', 'vendor/lib64/libscaler_hw.unifunc.so', 'vendor/lib/unihal_main@2.15.so', 'vendor/lib64/unihal_main@2.15.so'): blob_fixup()
-        .add_needed('libui_shim.so'),
+    ('vendor/lib/libscaler_hw.unifunc.so', 'vendor/lib/libsensorlistener.so', 'vendor/lib64/libsensorlistener.so', 'vendor/lib64/libscaler_hw.unifunc.so', 'vendor/lib/unihal_main@2.15.so', 'vendor/lib64/unihal_main@2.15.so'): blob_fixup()
+        .add_needed('libui_shim.so')
+        .add_needed('libshim_sensorndkbridge.so'),
 }
 
 module = ExtractUtilsModule(
