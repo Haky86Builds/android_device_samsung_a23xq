@@ -504,6 +504,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
+    libwfdaac_vendor \
     libwpa_client \
     wpa_cli \
     wpa_supplicant \
