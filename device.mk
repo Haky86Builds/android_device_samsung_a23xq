@@ -492,6 +492,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
+
 # WiFi
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
