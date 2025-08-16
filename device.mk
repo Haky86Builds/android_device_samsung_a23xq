@@ -479,6 +479,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 AB_OTA_UPDATER := false
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.3-service.dual_role_usb \
+
 # WiFi
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
