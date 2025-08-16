@@ -506,6 +506,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     libwfdaac_vendor \
     libwpa_client \
+    TetheringConfigOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
