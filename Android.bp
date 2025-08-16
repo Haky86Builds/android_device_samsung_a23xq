@@ -12,3 +12,10 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+prebuilt_hidl_interfaces {
+    name: "st.nfc_hal_service",
+    interfaces: [
+        "vendor.samsung.hardware.nfc@2.0::ISehNfc",
+    ],
+}
